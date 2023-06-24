@@ -19,9 +19,6 @@ bands.get('/', async (req, res) => {
     }
 })
 
-
-
-
 // FIND A SPECIFIC BAND
 bands.get('/:id', async (req, res) => {
     try {
@@ -78,9 +75,6 @@ bands.delete('/:id', async (req, res) => {
         res.status(500).json(err)
     }
 })
-
-
-
 
 // EXPORT
 module.exports = bands
